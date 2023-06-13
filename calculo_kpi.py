@@ -1,12 +1,12 @@
 """
 Dados das empresas:
-                          XPTO           YZTO
-DIAS                       360            360
-RECEITA LIQUIDA          10000          10000
-CUSTOS                    7000           7000
-ESTOQUES                   100            600
-CONTAS A RECEBER           100            600
-FORNECEDORES               600            100
+                          XPTO           YZTO   TABELAS EXCEL DE BALANCO
+DIAS                       360            360   90 DIAS (FUNDAMENTUS)
+RECEITA LIQUIDA          10000          10000   LINHA 5  (ABA DRE)
+CUSTOS                    7000           7000   LINHA 6  (ABA DRE, SE OS CUSTOS FOREM NEGATIVOS, USAR ABS())
+ESTOQUES                   100            600   LINHA 8  (ABA BAL PATRIM)
+CONTAS A RECEBER           100            600   LINHA 7  (ABA BAL PATRIM)
+FORNECEDORES               600            100   LINHA 30 (ABA BAL PATRIM)
 
 PME = PRAZO MEDIO DE ESTOQUES(INICIA NA COMPRA DO MATERIAL E TERMINA NA VENDA DO PRODUTO)
 PMR = PRAZO MEDIO DE RECEBIMENTOS(INICIA NA VENDA DO PRODUTO E TERMINA NO RECEBIMENTO)
