@@ -1,2 +1,2 @@
-# Soulcode
-Lembretes e exercicios
+# Conteúdos do Bootcamp de Análise de Dados da Soulcode
+
