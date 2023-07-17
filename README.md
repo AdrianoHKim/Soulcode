@@ -4,7 +4,7 @@
 
 # Conteúdos,atividades e projetos do Bootcamp de Análise de Dados da Soulcode
 
-Este repositório contém os conteúdos e atividades desenvolvidas e realizdas durante o Bootcamp da SoulCode. 
+Este repositório contém os conteúdos e atividades desenvolvidas e realizadas durante o Bootcamp da SoulCode. 
 Aqui você encontrará uma variedade de projetos e exercícios relacionados aos principais tópicos abordados no curso pelos
 professores Douglas Ribeiro e Franciane Rodrigues.
 
