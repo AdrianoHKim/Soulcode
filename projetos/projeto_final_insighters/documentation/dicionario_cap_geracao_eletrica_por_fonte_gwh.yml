@@ -1,0 +1,17 @@
+nome: cap_geracao_eletrica_por_fonte
+descricao: Tabela derivada do Anuário Estatístico de Energia Elétrica da Empresa de Pesquisa Energética (EPE) referente ao item 2.3. geracao eletrica por fonte em GWh
+origem: https://dashboard.epe.gov.br/apps/anuario-livro/
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: xlsx
+schema:
+ - coluna: Grupo
+   descricao: Fonte geradora de energia
+   tipo: string
+ - coluna: Ano
+   descricao: Ano yyyy
+   tipo: string
+ - coluna: Total
+   descricao: Quantidade
+   tipo: double
