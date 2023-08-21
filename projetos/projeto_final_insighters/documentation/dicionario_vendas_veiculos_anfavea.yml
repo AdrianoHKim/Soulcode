@@ -1,0 +1,59 @@
+nome: vendas_veiculos_eletricos_Brasil
+descricao: Tabela com venda de veículos elétricos no Brasil de 2012 a 2013 derivada da tabela siteautoveículos2023 - Licenciamento de veiculos por tipo de combustivel
+origem: https://anfavea.com.br/docs/siteautoveiculos2023.xlsx
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: csv
+schema:
+ - coluna: Ano
+   descricao: Ano calendario
+   tipo: string
+ - coluna: AnoNumber
+   descricao: Ano numero inteiro
+   tipo: int
+ - coluna: Tipo
+   descricao: Tipo de veiculo
+   tipo: string
+ - coluna: Jan
+   descricao: Mes Janeiro
+   tipo: int
+ - coluna: Fev
+   descricao: Mes Fevereiro
+   tipo: int
+ - coluna: Mar
+   descricao: Mes Marco
+   tipo: int
+ - coluna: Abr
+   descricao: Mes Abril
+   tipo: int
+ - coluna: Mai
+   descricao: Mes Maio
+   tipo: int
+ - coluna: Jun
+   descricao: Mes Junho
+   tipo: int
+ - coluna: Jul
+   descricao: Mes Julho
+   tipo: int
+ - coluna: Ago
+   descricao: Mes Agosto
+   tipo: int
+ - coluna: Set
+   descricao: Mes Setembro
+   tipo: int
+ - coluna: Out
+   descricao: Mes Outubro
+   tipo: int
+ - coluna: Nov
+   descricao: Mes Novembro
+   tipo: int
+ - coluna: Dez
+   descricao: Mes Dezembro
+   tipo: int
+ - coluna: Total Ano
+   descricao: Total por ano
+   tipo: int
+ - coluna: CrescimentoAno
+   descricao: Crescimento anual com base no ano anterior
+   tipo: string

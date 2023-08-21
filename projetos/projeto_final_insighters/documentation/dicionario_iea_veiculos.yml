@@ -1,0 +1,32 @@
+nome: iea_veiculos
+descricao: Conjunto de dados referente a veículos elétricos no sistema global
+origem: https://www.iea.org/data-and-statistics/data-sets
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: csv
+schema:
+ - coluna: pais
+   descricao: País
+   tipo: string
+ - coluna: categoria
+   descricao: Categoria da busca realizada
+   tipo: string
+ - coluna: parametro
+   descricao: Parâmetros analisados
+   tipo: string
+ - coluna: veiculo
+   descricao: Tipo de veículo
+   tipo: string
+ - coluna: carregamento
+   descricao: Tipo de carregamento
+   tipo: string
+ - coluna: unidade
+   descricao: Tipo de unidade de medida
+   tipo: string
+ - coluna: valor
+   descricao: Valor da medida
+   tipo: string
+ - coluna: ano
+   descricao: Ano referência
+   tipo: int

@@ -1,0 +1,68 @@
+nome: fator_capacidade
+descricao: Conjunto de dados com capacidade instalada e geração de energia elétrica derivadas do Balanço Energético Nacional 2023
+origem: https://ons-dl-prod-opendata.s3.amazonaws.com/dataset/fator_capacidade_2_di/DicionarioDados_FatorCapacidade.pdf
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: csv
+schema:
+ - coluna: id_subsistema
+   descricao: Identificador do subsistema
+   tipo: string
+ - coluna: nom_subsistema
+   descricao: Nome do subsistema
+   tipo: string
+ - coluna: id_estado
+   descricao: Identificador do estado
+   tipo: string
+ - coluna: nom_estado
+   descricao: Nome do estado
+   tipo: string
+ - coluna: nom_pontoconexao
+   descricao: Nome do ponto de conexão
+   tipo: string
+ - coluna: nom_localizacao
+   descricao: Localização da usina/conjunto
+   tipo: string
+ - coluna: val_latitudesecoletora
+   descricao: Latitude usina/conjunto
+   tipo: double
+ - coluna: val_longitudesecoletora
+   descricao: Longitude usina/conjunto
+   tipo: double
+ - coluna: val_latitudepontoconexao
+   descricao: Latitude ponto de conexão
+   tipo: double
+ - coluna: val_longitudepontoconexao
+   descricao: Longitude ponto de conexão
+   tipo: double
+ - coluna: nom_modalidadeoperacao
+   descricao: Modalidade de operação 
+   tipo: string
+ - coluna: nom_tipousina
+   descricao: Tipo da usina
+   tipo: string
+ - coluna: nom_usina_conjunto
+   descricao: Nome da usina/conjunto
+   tipo: string
+ - coluna: id_ons
+   descricao: Identificador da usina ou conjunto no ONS
+   tipo: string
+ - coluna: ceg
+   descricao: Código Único do Empreendimento de Geração (CEG), estabelecido pela ANEEL
+   tipo: string
+ - coluna: data
+   descricao: Data
+   tipo: string
+ - coluna: val_geracaoprogramada
+   descricao: Geração Programada, em MWmed
+   tipo: double
+ - coluna: val_geracaoverificada
+   descricao: Geração Verificada, em MWmed
+   tipo: double
+ - coluna: val_capacidadeinstalada
+   descricao: Capacidade instalada, em MW v
+   tipo: double
+ - coluna: val_fatorcapacidade
+   descricao: Fator de capacidade, obtida pela relação entre a geração e a capacidade instalada
+   tipo: double

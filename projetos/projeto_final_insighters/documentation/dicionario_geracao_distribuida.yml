@@ -1,0 +1,123 @@
+nome: geracao_distribuida
+descricao: Este é o novo conjunto de dados extraídos do SISGD - Sistema de Geração Distribuída, que contém as informações dos empreendimentos de geração distribuída (fonte Aneel)
+origem: https://dadosabertos.aneel.gov.br/
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: csv
+schema:
+ - coluna: dataPesquisa
+   descricao: Data e hora do processamento de carga automática no momento da geração para publicação do conjunto de dados abertos
+   tipo: string
+ - coluna: periodoPesquisa
+   descricao: Ano e mês de referência dos dados
+   tipo: string
+ - coluna: idDistribuidora
+   descricao: Cadastro Nacional de Pessoas Jurídicas
+   tipo: double
+ - coluna: agenteAbreviado
+   descricao: Sigla que abrevia o nome do Agente de Geração Distribuída
+   tipo: string
+ - coluna: agenteNome
+   descricao: Nome do Agente de Geração Distribuída
+   tipo: string
+ - coluna: classeConsumo
+   descricao: Código que representa a classificação de consumo das unidades consumidoras
+   tipo: int
+ - coluna: nomeClasseConsumo
+   descricao: Descrição da classificação de consumo das unidades consumidoras
+   tipo: string
+ - coluna: subgrupoTarifa
+   descricao: Código que representa os subgrupos tarifários
+   tipo: int
+ - coluna: nomeSubgrupoTarifa
+   descricao: Grupamento de unidades consumidoras de acordo com os grupos tarifários
+    A1 - tensão de fornecimento igual ou superior a 230 kV
+    A2 - tensão de fornecimento de 88 kV a 138 kV
+    A3 - tensão de fornecimento de 69 kV
+    A3a - tensão de fornecimento de 30 kV a 44 kV
+    A4 - tensão de fornecimento de 2,3 kV a 25 kV
+    AS - subterrâneo
+    B1 - residencial
+    B2 - rural
+    B3 - demais classes
+    B4 - iluminação pública
+   tipo: string
+ - coluna: ufIbge
+   descricao: Código do IBGE referente ao estado do Brasil em que se situa o Empreendimento de Geração Distribuída 
+   tipo: int
+ - coluna: uf
+   descricao: Sigla do IBGE, formada pelo conjunto de duas letras, referente ao Estado do Brasil em que se situa o Empreendimento de Geração Distribuída
+   tipo: string
+ - coluna: regiaoIbge
+   descricao: Código Externo do IBGE referente a Meso Região em que se situa o Empreendimento de Geração Distribuída
+   tipo: int
+ - coluna: regiaoNome
+   descricao: Nome da Meso Região atribuído pelo IBGE em que se situa o Empreendimento de Geração Distribuída
+   tipo: string
+ - coluna: municipioIbge
+   descricao: Código Externo do IBGE referente ao Município em que se situa o Empreendimento de Geração Distribuída
+   tipo: int
+ - coluna: municipio
+   descricao: Nome do Município onde atribuído pelo IBGE em que se situa o Empreendimento de Geração Distribuída
+   tipo: string
+ - coluna: CEP
+   descricao: CEP origem dos Correios
+   tipo: string
+ - coluna: tipoConsumidor
+   descricao: Sigla de identificação do tipo de consumidor
+    PJ – Pessoa Jurídica 
+    PF – Pessoa Física
+   tipo: string
+ - coluna: idConsumidor
+   descricao: Cadeia de caracteres referente ao número de cadastro de Pessoa Física (CPF) ou Pessoa Jurídica (CNPJ) do proprietário do Empreendimento de Geração Distribuída
+   tipo: string
+ - coluna: nomeTitularEmpreendimento
+   descricao: Nome do titular do Empreendimento de Geração Distribuída
+   tipo: string
+ - coluna: idEmpreendimento
+   descricao: Código do Empreendimento de Geração Distribuída
+   tipo: string
+ - coluna: cadastroEmpreendimento
+   descricao: Data da última atualização cadastral do empreendimento de distribuição
+   tipo: string
+ - coluna: tipoEmpreendimento
+   descricao: Sigla da modalidade ao qual o empreendimento de geração está habilitado, classificado em
+    P - Com Microgeração ou Minigeração distribuída
+    R - Caracterizada como autoconsumo remoto
+    C - Caracterizada como Geração compartilhada
+    M - Integrante de empreendimento de múltiplas UC (Unidades Consumidoras)
+   tipo: string
+ - coluna: tipoHabilitado
+   descricao: Modalidade ao qual o empreendimento de geração está habilitado, classificado em
+    Com Microgeração ou Minigeração distribuída
+    Caracterizada como autoconsumo remoto
+    Caracterizada como Geração compartilhada
+    Integrante de empreendimento de múltiplas UC (Unidades Consumidoras)
+   tipo: string
+ - coluna: creditoReceber
+   descricao: Quantidade de UC (Unidades Consumidoras) menores que pertencem a essa UC (Unidade Consumidora)
+   tipo: int
+ - coluna: tipoGeracao
+   descricao: Abreviação do tipo de geração. Classificado em
+    UTN - Usina Termonuclear
+    UTE - Usina Termelétrica
+    UHE - Usina Hidrelétrica
+    UFV - Central Geradora Solar Fotovoltaica
+    PCH - Pequena Central Hidrelétrica
+    EOL - Central Geradora Eólica
+    CGU - Central Geradora Undi-elétrica
+    CGH - Central Geradora Hidrelétrica
+   tipo: string
+ - coluna: fonteGeracao
+   descricao: Descrição do combustível usado pelo empreendimento (Etanol, Casca de Arroz, etc.)
+   tipo: string
+ - coluna: porte
+   descricao: Porte do Empreendimento de Geração Distribuída (Microgeração ou Minigeração)
+   tipo: string
+ - coluna: potenciaInstalada(KW)
+   descricao: Armazena os dados expressos em quantidades e potência instalada em kW (quilowatt), definida pela somatória das potências elétricas ativas nominais dos módulos da central de geração distribuída
+   tipo: int
+ - coluna: anoCadastral
+   descricao: Ano referência da última atualização cadastral do empreendimento de distribuição
+   tipo: int

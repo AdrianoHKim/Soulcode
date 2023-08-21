@@ -1,0 +1,23 @@
+nome: cap_instalada_por_regiao_e_uf
+descricao: Tabela derivada do Anuário Estatístico de Energia Elétrica da Empresa de Pesquisa Energética (EPE) referente ao item 2.2. capacidade instalada por região e uf
+origem: https://dashboard.epe.gov.br/apps/anuario-livro/
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: xlsx
+schema:
+ - coluna: Grupo
+   descricao: Estados
+   tipo: string
+ - coluna: Macro_grupo
+   descricao: Região
+   tipo: string
+ - coluna: Ano
+   descricao: Ano yyyy
+   tipo: string
+ - coluna: Tipo_de_informacao
+   descricao: capacidade instalada em MW e geracão em GWh
+   tipo: string
+ - coluna: Total
+   descricao: Quantidade
+   tipo: double

@@ -1,0 +1,17 @@
+nome: cap_instalada_de_geracao_eletrica_por_fonte_mw
+descricao: Tabela derivada do Anuário Estatístico de Energia Elétrica da Empresa de Pesquisa Energética (EPE) referente ao item 2.3. capacidade instalada de geracão elétrica por fonte
+origem: https://dashboard.epe.gov.br/apps/anuario-livro/
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: csv
+schema:
+ - coluna: ano
+   descricao: Ano referente a coleta dos registros
+   tipo: string
+ - coluna: grupo
+   descricao: Cada fonte de energia presente na pesquisa e o total de capacidade de todas fontes ao ano
+   tipo: string
+ - coluna: total
+   descricao: Total de capacidade instalada de cada fonte energetica em MW(Megawatt)
+   tipo: double

@@ -1,0 +1,59 @@
+nome: tratado_global_horizontal_means
+descricao: Tabela LABREN do ano de 2017 com médias anuais e mensais do total diário da irradiação solar Global Horizontal, Difusa, Direta Normal, no Plano Inclinado e PAR em Wh/m2 dia
+origem: LABREN (Laboratório de Modelagem e Estudos de Recursos Renováveis de Energia) / CCST (Centro de Ciência do Sistema Terrestre) / INPE (Intituto Nacional de Pesquisas Espaciais) - Brasil
+tratamento: squadOito
+armazenamento: GCS
+acesso: privado
+formato: csv
+schema:
+ - coluna: id
+   descricao: Identificação da entidade
+   tipo: int
+ - coluna: pais
+   descricao: Pais
+   tipo: string
+ - coluna: longitude
+   descricao: Longitude do centróide da entida
+   tipo: double
+ - coluna: latitude
+   descricao: Latitude do centróide da entidade
+   tipo: double
+ - coluna: anual
+   descricao: Média anual do total diário em Wh/m2 dia
+   tipo: int
+ - coluna: janeiro
+   descricao: Média mensal do total diário da irradiação de janeiro em Wh/m2 dia
+   tipo: int
+ - coluna: fevereiro
+   descricao: Média mensal do total diário da irradiação de fevereiro em Wh/m2 dia
+   tipo: int
+ - coluna: marco
+   descricao: Média mensal do total diário da irradiação de marco em Wh/m2 dia
+   tipo: int
+ - coluna: abril
+   descricao: Média mensal do total diário da irradiação de abril em Wh/m2 dia
+   tipo: int
+ - coluna: maio
+   descricao: Média mensal do total diário da irradiação de maio em Wh/m2 dia
+   tipo: int
+ - coluna: junho
+   descricao: Média mensal do total diário da irradiação de junho em Wh/m2 dia
+   tipo: int
+ - coluna: julho
+   descricao: Média mensal do total diário da irradiação de julho em Wh/m2 dia
+   tipo: int
+ - coluna: agosto
+   descricao: Média mensal do total diário da irradiação de agosto em Wh/m2 dia
+   tipo: int
+ - coluna: setembro
+   descricao: Média mensal do total diário da irradiação de setembro em Wh/m2 dia
+   tipo: int
+ - coluna: outubro
+   descricao: Média mensal do total diário da irradiação de outubro em Wh/m2 dia
+   tipo: int
+ - coluna: novembro
+   descricao: Média mensal do total diário da irradiação de novembro em Wh/m2 dia
+   tipo: int
+ - coluna: dezembro
+   descricao: Média mensal do total diário da irradiação de dezembro em Wh/m2 dia
+   tipo: int
